@@ -88,8 +88,8 @@
 // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "Codetector1374" // Who made the changes.
 #define SHOW_BOOTSCREEN
-#define STRING_SPLASH_LINE1 "Marlin 1.1.0-RC8. Config Rev.0" // will be shown during bootup in line 1
-#define STRING_SPLASH_LINE2 "http://codetector.cn"         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE1 "M 1.1.0-RC8 C.Rev.0" // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE2 "codetector.cn"         // will be shown during bootup in line 2
 
 //
 // *** VENDORS PLEASE READ *****************************************************
@@ -580,7 +580,7 @@
 //  (0,0)
 #define X_PROBE_OFFSET_FROM_EXTRUDER -35  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER 15  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.3   // Z offset: -below +above  [the nozzle]
 
 // X and Y axis travel speed (mm/m) between probes
 #define XY_PROBE_SPEED 8000
@@ -804,8 +804,8 @@
 #if ENABLED(AUTO_BED_LEVELING_LINEAR) || ENABLED(AUTO_BED_LEVELING_BILINEAR)
 
   // Set the number of grid points per dimension.
-  #define ABL_GRID_POINTS_X 3
-  #define ABL_GRID_POINTS_Y ABL_GRID_POINTS_X
+  #define ABL_GRID_POINTS_X 7
+  #define ABL_GRID_POINTS_Y 10
 
   // Set the boundaries for probing (where the probe can reach).
   #define LEFT_PROBE_BED_POSITION 0
